@@ -41,12 +41,12 @@ main {
       rgba(228, 202, 176, 0.4),
       rgba(110, 64, 43, 0.4)
     ),
-    url(/img/img6.jpg);
+    url(/img/img4.jpg);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
 
-  height: 300vh;
+  height: 150vh;
   /* clip-path: polygon(0 0, 100% 0, 100% 600px, 0 100%); */
   border-radius: 10px;
   position: relative;
@@ -71,22 +71,12 @@ a {
   text-decoration: none;
 }
 
-.logo-box {
-  position: absolute;
-  top: 40px;
-  left: 10px;
-}
-
-.logo {
-  height: 120px;
-}
-
 .text-box {
   position: absolute;
   font-size: 1.2rem;
 }
 
-.heading-primary-left {
+.heading-primary-top {
   margin: 4rem 0 4rem 4rem;
   padding: 2rem;
   width: 50%;
@@ -97,31 +87,16 @@ a {
   backface-visibility: hidden;
 }
 
-.heading-primary-right {
-  margin: 12rem 0 0 53rem;
+.map {
+  margin: 12rem 0 0 4rem;
   padding: 2rem;
-  width: 50%;
+  width: 90vh;
+  /* width: 70vh; */
   background-color: var(--blu1);
   color: var(--brwn3);
   border-radius: 10px;
   text-transform: uppercase;
   backface-visibility: hidden;
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  80% {
-    transform: translateX(10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
 }
 
 .sticky {

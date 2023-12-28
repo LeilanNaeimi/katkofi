@@ -72,11 +72,42 @@ a {
 .logo-box {
   position: absolute;
   top: 40px;
-  left: 10px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
-.logo {
+.logo1 {
   height: 120px;
+  transition: filter 300ms;
+}
+
+.logo1:hover {
+  filter: drop-shadow(0 0 2em var(--brwn2));
+}
+.logo1.react:hover {
+  filter: drop-shadow(0 0 2em var(--brwn2));
+}
+
+.logo2 {
+  height: 20px;
+  margin-top: 2.2rem;
+}
+
+@keyframes logo1-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #spinningLogo {
+    /* Use the id or class you added to the img element */
+    animation: logo1-spin infinite 20s linear;
+  }
 }
 
 .text-box {
