@@ -29,10 +29,9 @@ main {
 .header {
   height: 95vh;
   width: 75vw;
-  background-image: linear-gradient(to right bottom, rgba(228, 202, 176, 0.4), rgba(110, 64, 43, 0.4)), url(/img/img5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(254, 250, 224, 0.4), rgba(108, 52, 40, 0.4)), url(/img/img5.jpg);
   background-size: cover;
   background-position: top;
-  /* clip-path: polygon(0 0, 100% 0, 100% 600px, 0 100%); */
   border-radius: 10px 10px 0 0;
   position: relative;
 }
@@ -56,7 +55,7 @@ a {
   text-decoration: none;
 }
 
-.logo-box {
+.logobox {
   position: absolute;
   top: 40px;
   left: 40px;
@@ -70,10 +69,6 @@ a {
 }
 
 .logo1:hover {
-  filter: drop-shadow(0 0 2em #ba704f);
-}
-
-.logo1.react:hover {
   filter: drop-shadow(0 0 2em #ba704f);
 }
 
@@ -92,33 +87,29 @@ a {
 }
 @media (prefers-reduced-motion: no-preference) {
   #spinningLogo {
-    /* Use the id or class you added to the img element */
     animation: logo1-spin infinite 20s linear;
   }
 }
-.text-box {
+.heading {
   position: absolute;
   top: 40%;
   padding: 2rem;
   background-color: #6c3428;
   border-radius: 10px;
 }
-
-.heading-primary {
+.heading__primary {
   color: #fefae0;
   text-transform: uppercase;
   backface-visibility: hidden;
 }
-
-.heading-primary-main {
+.heading__primary-main {
   display: block;
   font-size: 7.5rem;
   font-weight: 400;
   letter-spacing: 4rem;
   animation: moveInLeft 1s ease-out;
 }
-
-.heading-primary-sub {
+.heading__primary-sub {
   display: block;
   font-size: 3rem;
   font-weight: 400;

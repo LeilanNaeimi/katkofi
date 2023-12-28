@@ -1,10 +1,27 @@
-// :root {
-//   --brwn1: #b99470;
-//   --brwn2: #ba704f;
-//   --brwn3: #6c3428;
-//   --blu1: #cee6f3;
-//   --light1: #fefae0;
-// }
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/bg-video';
+@import 'components/button';
+@import 'components/card';
+@import 'components/composition';
+@import 'components/feature-box';
+@import 'components/form';
+@import 'components/popup';
+@import 'components/story';
+
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/navigation';
+
+@import 'pages/home';
 
 $color-brwn1: #b99470;
 $color-brwn2: #ba704f;
@@ -45,13 +62,12 @@ main {
   width: 75vw;
   background-image: linear-gradient(
       to right bottom,
-      rgba(228, 202, 176, 0.4),
-      rgba(110, 64, 43, 0.4)
+      rgba($color-light1, 0.4),
+      rgba($color-brwn3, 0.4)
     ),
     url(/img/img5.jpg);
   background-size: cover;
   background-position: top;
-  /* clip-path: polygon(0 0, 100% 0, 100% 600px, 0 100%); */
   border-radius: 10px 10px 0 0;
   position: relative;
 }
@@ -75,7 +91,7 @@ a {
   text-decoration: none;
 }
 
-.logo-box {
+.logobox {
   position: absolute;
   top: 40px;
   left: 40px;
@@ -89,9 +105,6 @@ a {
 }
 
 .logo1:hover {
-  filter: drop-shadow(0 0 2em $color-brwn2);
-}
-.logo1.react:hover {
   filter: drop-shadow(0 0 2em $color-brwn2);
 }
 
@@ -111,38 +124,37 @@ a {
 
 @media (prefers-reduced-motion: no-preference) {
   #spinningLogo {
-    /* Use the id or class you added to the img element */
     animation: logo1-spin infinite 20s linear;
   }
 }
 
-.text-box {
+.heading {
   position: absolute;
   top: 40%;
   padding: 2rem;
   background-color: $color-brwn3;
   border-radius: 10px;
-}
 
-.heading-primary {
-  color: $color-light1;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-}
+  &__primary {
+    color: $color-light1;
+    text-transform: uppercase;
+    backface-visibility: hidden;
 
-.heading-primary-main {
-  display: block;
-  font-size: 7.5rem;
-  font-weight: 400;
-  letter-spacing: 4rem;
-  animation: moveInLeft 1s ease-out;
-}
+    &-main {
+      display: block;
+      font-size: 7.5rem;
+      font-weight: 400;
+      letter-spacing: 4rem;
+      animation: moveInLeft 1s ease-out;
+    }
 
-.heading-primary-sub {
-  display: block;
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 2rem;
+    &-sub {
+      display: block;
+      font-size: 3rem;
+      font-weight: 400;
+      letter-spacing: 2rem;
+    }
+  }
 }
 
 @keyframes moveInLeft {
