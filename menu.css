@@ -42,11 +42,11 @@ main {
       rgba(228, 202, 176, 0.4),
       rgba(110, 64, 43, 0.4)
     ),
-    url(/img/img5.jpg);
+    url(/img/img6.jpg);
   background-size: cover;
   background-position: top;
   /* clip-path: polygon(0 0, 100% 0, 100% 600px, 0 100%); */
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -57,14 +57,13 @@ nav {
   padding: 5rem;
   font-size: 4rem;
   letter-spacing: 1rem;
-  line-height: 8rem;
+  line-height: 1rem;
 }
 
 a {
   padding: 5rem;
   font-size: 4rem;
   letter-spacing: 1rem;
-  line-height: 8rem;
   color: var(--light1);
   text-decoration: none;
 }
@@ -81,31 +80,29 @@ a {
 
 .text-box {
   position: absolute;
-  top: 40%;
-  padding: 2rem;
-  background-color: var(--brwn3);
-  border-radius: 10px;
+  font-size: 1.2rem;
 }
 
-.heading-primary {
-  color: var(--light1);
+.heading-primary-left {
+  margin: 4rem 0 4rem 4rem;
+  padding: 2rem;
+  width: 50%;
+  background-color: var(--blu1);
+  color: var(--brwn3);
+  border-radius: 10px;
   text-transform: uppercase;
   backface-visibility: hidden;
 }
 
-.heading-primary-main {
-  display: block;
-  font-size: 7.5rem;
-  font-weight: 400;
-  letter-spacing: 4rem;
-  animation: moveInLeft 1s ease-out;
-}
-
-.heading-primary-sub {
-  display: block;
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 2rem;
+.heading-primary-right {
+  margin: 12rem 0 0 53rem;
+  padding: 2rem;
+  width: 50%;
+  background-color: var(--blu1);
+  color: var(--brwn3);
+  border-radius: 10px;
+  text-transform: uppercase;
+  backface-visibility: hidden;
 }
 
 @keyframes moveInLeft {
