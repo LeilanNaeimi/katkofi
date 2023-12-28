@@ -6,6 +6,9 @@
   --light1: #fefae0;
 }
 
+/* background-attachment: scroll;
+background-attachment: fixed; */
+
 *,
 *::after,
 *::before {
@@ -35,7 +38,6 @@ main {
 }
 
 .header {
-  height: 95vh;
   width: 75vw;
   background-image: linear-gradient(
       to right bottom,
@@ -45,12 +47,16 @@ main {
     url(/img/img6.jpg);
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
+
+  height: 300vh;
   /* clip-path: polygon(0 0, 100% 0, 100% 600px, 0 100%); */
   border-radius: 10px;
   position: relative;
 }
 
 nav {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   float: right;
@@ -121,12 +127,12 @@ a {
   }
 }
 
-/*********** SECTION ************/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
-.section-about {
-  background-color: var(--brwn3);
-  padding: 25rem 0;
-  height: 95vh;
-  width: 75vw;
-  border-radius: 0 0 10px 10px;
+.sticky + .container {
+  padding-top: 60px;
 }
