@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fefae0;
+  color: #fefae0;
+  font-family: "Roboto", Courier, monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 30px;
+}
+
+.container,
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  height: 95vh;
+  width: 75vw;
+  background-image: linear-gradient(to right bottom, rgba(228, 202, 176, 0.4), rgba(110, 64, 43, 0.4)), url(/img/img5.jpg);
+  background-size: cover;
+  background-position: top;
+  /* clip-path: polygon(0 0, 100% 0, 100% 600px, 0 100%); */
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding: 5rem;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  line-height: 8rem;
+}
+
+a {
+  padding: 5rem;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  line-height: 8rem;
+  color: #fefae0;
+  text-decoration: none;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo1 {
+  height: 120px;
+  transition: filter 300ms;
+}
+
+.logo1:hover {
+  filter: drop-shadow(0 0 2em #ba704f);
+}
+
+.logo1.react:hover {
+  filter: drop-shadow(0 0 2em #ba704f);
+}
+
+.logo2 {
+  height: 20px;
+  margin-top: 2.2rem;
+}
+
+@keyframes logo1-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #spinningLogo {
+    /* Use the id or class you added to the img element */
+    animation: logo1-spin infinite 20s linear;
+  }
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  padding: 2rem;
+  background-color: #6c3428;
+  border-radius: 10px;
+}
+
+.heading-primary {
+  color: #fefae0;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 7.5rem;
+  font-weight: 400;
+  letter-spacing: 4rem;
+  animation: moveInLeft 1s ease-out;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 2rem;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+/*********** SECTION ************/
+.section-about {
+  background-color: #6c3428;
+  padding: 25rem 0;
+  height: 95vh;
+  width: 75vw;
+  border-radius: 0 0 10px 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
