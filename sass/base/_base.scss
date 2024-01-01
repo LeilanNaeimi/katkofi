@@ -1,5 +1,15 @@
-$color-brwn1: #b99470;
-$color-brwn2: #ba704f;
-$color-brwn3: #6c3428;
-$color-blu1: #cee6f3;
-$color-light1: #fefae0;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}

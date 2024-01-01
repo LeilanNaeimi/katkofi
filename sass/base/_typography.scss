@@ -1,0 +1,77 @@
+body {
+  background-color: $color-light1;
+  color: $color-light1;
+  font-family: 'Roboto', Courier, monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 30px;
+}
+
+.heading {
+  position: absolute;
+  top: 45%;
+  padding: 2rem;
+  background-color: $color-brwn3;
+  border-radius: 10px;
+
+  &__primary {
+    color: $color-light1;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+
+    &-main {
+      display: block;
+      font-size: 4rem;
+      font-weight: 400;
+      letter-spacing: 4rem;
+      animation: moveInLeft 1s ease-out;
+    }
+
+    &-sub {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 400;
+      letter-spacing: 2rem;
+    }
+  }
+}
+//home
+.heading-secondry {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 2rem;
+  background-image: linear-gradient(to right, $color-blu1, $color-brwn3);
+  background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-blck, 0.2);
+  }
+}
+//menu
+.menu-section-left {
+  margin: 4rem 0 4rem 4rem;
+  padding: 2rem;
+  width: 50%;
+  background-color: $color-blu1;
+  color: $color-brwn3;
+  border-radius: 10px;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+
+.menu-section-right {
+  margin: 12rem 0 0 53rem;
+  padding: 2rem;
+  width: 50%;
+  background-color: $color-blu1;
+  color: $color-brwn3;
+  border-radius: 10px;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}

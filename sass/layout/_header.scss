@@ -1,0 +1,57 @@
+//all
+.container,
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  height: 95vh;
+  width: 75vw;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+// home css
+.home-header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-light1, 0.4),
+      rgba($color-brwn3, 0.4)
+    ),
+    url(/img/img5.jpg);
+  border-radius: 10px 10px 0 0;
+}
+//contact css
+
+.contact-header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(228, 202, 176, 0.4),
+      rgba(110, 64, 43, 0.4)
+    ),
+    url(/img/img4.jpg);
+  border-radius: 10px;
+}
+
+// menu
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-header {
+  height: 200vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(228, 202, 176, 0.4),
+      rgba(110, 64, 43, 0.4)
+    ),
+    url(/img/img6.jpg);
+  border-radius: 10px;
+  width: 75vw;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}

@@ -1,78 +1,22 @@
 .footer {
-    background-color: $color-grey-dark-3;
-    padding: 10rem 0;
-    font-size: 1.4rem;
-    color: $color-grey-light-1;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  color: $color-blck;
+}
 
-    @include respond(tab-port) {
-        padding: 8rem 0;
-    }
+.github {
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
 
-    &__logo-box {
-        text-align: center;
-        margin-bottom: 8rem;
-
-        @include respond(tab-port) {
-            margin-bottom: 6rem;
-        }
-    }
-
-    &__logo {
-        width: 15rem;
-        height: auto;
-    }
-
-    &__navigation {
-        border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
-        display: inline-block;
-
-        @include respond(tab-port) {
-            width: 100%;
-            text-align: center;
-        }
-    }
-
-    &__list {
-        list-style: none;
-    }
-
-    &__item {
-        display: inline-block;
-
-        &:not(:last-child) {
-            margin-right: 1.5rem;
-        }
-    }
-
-    &__link {
-        &:link,
-        &:visited {
-            color: $color-grey-light-1;
-            background-color: $color-grey-dark-3;
-            text-decoration: none;
-            text-transform: uppercase;
-            display: inline-block;
-            transition: all .2s;
-        }
-
-        &:hover,
-        &:active {
-            color: $color-primary;
-            box-shadow: 0 1rem 2rem rgba($color-black, .4);
-            transform: rotate(5deg) scale(1.3);
-        }
-    }
-
-    &__copyright {
-        border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
-        width: 80%;
-        float: right;
-
-        @include respond(tab-port) {
-            width: 100%;
-            float: none;
-        }
-    }
+.github:hover {
+  transform: rotate(360deg) scale(1.2);
 }

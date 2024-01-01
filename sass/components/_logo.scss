@@ -1,0 +1,21 @@
+.logobox {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo1 {
+  height: 120px;
+  transition: filter 300ms;
+}
+
+.logo1:hover {
+  filter: drop-shadow(0 0 2em $color-brwn2);
+}
+
+.logo2 {
+  height: 20px;
+  margin-top: 2.2rem;
+}
